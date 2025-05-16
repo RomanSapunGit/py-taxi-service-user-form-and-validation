@@ -123,7 +123,7 @@ class LicensePlateUpdateView(LoginRequiredMixin, generic.UpdateView):
         )
 
 
-class LicensePlateCreateView(LoginRequiredMixin, generic.CreateView):
+class LicensePlateCreateView(LoginRequiredMixin, generic.UpdateView):
     model = Driver
     form_class = DriverLicenseUpdateForm
 
